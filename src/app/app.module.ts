@@ -18,6 +18,8 @@ import { interceptorProvider } from './interceptors/producto-interceptor.service
 import { UserComponent } from './users/user.component';
 import { AdminComponent } from './users/admin.component';
 import { RegistroComponent } from './users/registro.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -30,13 +32,15 @@ import { RegistroComponent } from './users/registro.component';
     LoginComponent,
     UserComponent,
     AdminComponent,
-    RegistroComponent
+    RegistroComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [interceptorProvider],
   bootstrap: [AppComponent]

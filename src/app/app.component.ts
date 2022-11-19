@@ -11,6 +11,7 @@ export class AppComponent implements OnInit {
   isLogin = false;
   roles: string[];
   authority: string;
+  collapsed: boolean;
   constructor(private tokenService: TokenService, private router: Router) { }
 
   ngOnInit() {

@@ -1,28 +1,35 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
-  <a class="navbar-brand" href="#">Angular JWT</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  <div class="container-fluid">
+    <a class="navbar-brand ps-3" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Facundo Rebiski</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent, .navbar-collapse.show" aria-controls="navbarSupportedContent, .navbar-collapse.show" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" routerLink="">Home</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" routerLink="">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" routerLink="about">About</a>
+        </li>
+        <li *ngIf="!isLogin" class="nav-item">
+          <a class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" routerLink="login">Iniciar Sesión</a>
+        </li>
+        <li *ngIf="authority === 'user'" class="nav-item">
+          <a class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" routerLink="user">Panel de usuario</a>
       </li>
-      <li *ngIf="!isLogin" class="nav-item">
-        <a class="nav-link" routerLink="login">Iniciar Sesión</a>
-      </li>
-      <li *ngIf="authority === 'user'" class="nav-item">
-        <a class="nav-link" routerLink="user">Panel de usuario</a>
-    </li>
-      <li *ngIf="authority === 'admin'" class="nav-item">
-          <a class="nav-link" routerLink="admin">Panel de Admin</a>
-      </li>
-      <li *ngIf="isLogin" class="nav-item">
-        <a class="nav-link" (click)="logOut()" style="cursor: pointer;">Cerrar Sesión</a>
-      </li>
-    </ul>
+        <li *ngIf="authority === 'admin'" class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" routerLink="admin">Panel de Admin</a>
+        </li>
+        <li *ngIf="isLogin" class="nav-item">
+          <a class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" (click)="logOut()" style="cursor: pointer;">Cerrar Sesión</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>
 
-<router-outlet></router-outlet>
+<div class="container-fluid flex" style="width:80%;float:center;display:flex;align-items:center;justify-content:center;">
+  <router-outlet></router-outlet>
+</div>

@@ -11,6 +11,7 @@ import { GuardService as guard} from './guards/guard.service';
 import { AdminComponent } from './users/admin.component';
 import { UserComponent } from './users/user.component';
 import { RegistroComponent } from './users/registro.component';
+import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -20,6 +21,8 @@ const routes: Routes = [
   {path: 'detalle/:id', component: DetalleProductoComponent, canActivate: [guard], data: { expectedRol: ['admin', 'user']}},
   {path: 'nuevo', component: NuevoProductoComponent, canActivate: [guard], data: { expectedRol: ['admin']}},
   {path: 'editar/:id', component: EditarProductoComponent, canActivate: [guard], data: { expectedRol: ['admin']}},
+
+  {path: 'about', component: AboutComponent, canActivate: [guard], data: { expectedRol: ['admin', 'user']}},
 
   // user y admin
   {path: 'admin', component: AdminComponent, canActivate: [guard], data: {expectedRol: ['admin']}},
