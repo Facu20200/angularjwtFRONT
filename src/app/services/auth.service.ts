@@ -12,7 +12,7 @@ const cabecera = {headers: new HttpHeaders({'Content-Type': 'application/json'})
 })
 export class AuthService {
 
-  private authURL = 'https://angularjwt.herokuapp.com/auth/';
+  private authURL = 'https://angularjwt.angularjwt.koyeb/auth/';
 
   constructor(private httpClient: HttpClient) { }
 

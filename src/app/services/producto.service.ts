@@ -10,7 +10,7 @@ const cabecera = {headers: new HttpHeaders({'Content-Type': 'application/json'})
 })
 export class ProductoService {
 
-  productoURL = 'https://angularjwt.herokuapp.com/productos/'
+  productoURL = 'https://angularjwt.angularjwt.koyeb/productos/'
 
   constructor(private httpClient: HttpClient) { }
 

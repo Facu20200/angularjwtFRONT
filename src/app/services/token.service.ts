@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject, Observable } from 'rxjs';
 
 const TOKEN_KEY = 'AuthToken';
 const USERNAME_KEY = 'AuthUserName';
@@ -10,8 +11,11 @@ const AUTHORITIES_KEY = 'AutAuthorities';
 export class TokenService {
 
   roles: Array<string> = [];
+  loged: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
 
-  constructor() { }
+  constructor() {
+    sessionStorage.getItem('token') && sessionStorage.getItem('token') !== '{}' ? this.loged.next(true) : this.loged.next(false);
+  }
 
   public setToken(token: string): void {
     window.sessionStorage.removeItem(TOKEN_KEY);
@@ -44,6 +48,10 @@ export class TokenService {
       });
     }
     return this.roles;
+  }
+
+  isLoggedIn(): Observable<boolean> {
+    return this.loged.asObservable();
   }
 
   public logOut(): void {
