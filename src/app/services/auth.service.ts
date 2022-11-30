@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
 import { JwtModel } from '../models/jwt-model';
 import { NuevoUsuario } from '../models/nuevo-usuario';
 
-const cabecera = {headers: new HttpHeaders({'Content-Type': 'application/json'})};
+const cabecera = {headers: new HttpHeaders({'Content-Type': 'application/json', 'Access-Control-Allow-Origin': 'https://angularjwt.angularjwt.koyeb/'})};
 
 @Injectable({
   providedIn: 'root'

@@ -14,7 +14,7 @@ export class TokenService {
   loged: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
 
   constructor() {
-    sessionStorage.getItem('token') && sessionStorage.getItem('token') !== '{}' ? this.loged.next(true) : this.loged.next(false);
+    sessionStorage.getItem(TOKEN_KEY) && sessionStorage.getItem(TOKEN_KEY) !== '{}' ? this.loged.next(true) : this.loged.next(false);
   }
 
   public setToken(token: string): void {
