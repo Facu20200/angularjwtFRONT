@@ -10,7 +10,7 @@ const cabecera = {headers: new HttpHeaders({'Content-Type': 'application/json'})
   providedIn: 'root',
 })
 export class SoftSkillService {
-  baseUrl = 'https://angularjwt.angularjwt.koyeb/softskill';
+  baseUrl = 'https://angularjwt-facu20200.koyeb.app/softskill';
 
   constructor(private http: HttpClient) {}
 

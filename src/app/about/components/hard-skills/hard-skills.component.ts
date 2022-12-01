@@ -12,7 +12,7 @@ export class HardSkillsComponent implements OnInit {
   frontend: HardSkill[] = [];
   backend: HardSkill[] = [];
   tools: HardSkill[] = [];
-  API_URL = 'https://angularjwt.angularjwt.koyeb/about/';
+  API_URL = 'https://angularjwt-facu20200.koyeb.app/about/';
   addSkill: boolean = false;
   onLogin: boolean = false;
   editMode: boolean = false;

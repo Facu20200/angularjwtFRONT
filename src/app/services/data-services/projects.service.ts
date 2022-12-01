@@ -10,7 +10,7 @@ const cabecera = {headers: new HttpHeaders({'Content-Type': 'application/json'})
   providedIn: 'root',
 })
 export class ProjectsService {
-  baseUrl = 'https://angularjwt.angularjwt.koyeb/project';
+  baseUrl = 'https://angularjwt-facu20200.koyeb.app/project';
 
   constructor(private http: HttpClient) {}
 

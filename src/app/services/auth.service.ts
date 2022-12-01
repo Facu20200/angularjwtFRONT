@@ -5,14 +5,14 @@ import { Observable } from 'rxjs';
 import { JwtModel } from '../models/jwt-model';
 import { NuevoUsuario } from '../models/nuevo-usuario';
 
-const cabecera = {headers: new HttpHeaders({'Content-Type': 'application/json', 'Access-Control-Allow-Origin': 'https://angularjwt.angularjwt.koyeb/'})};
+const cabecera = {headers: new HttpHeaders({'Content-Type': 'application/json'})};
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
 
-  private authURL = 'https://angularjwt.angularjwt.koyeb/auth/';
+  private authURL = 'https://angularjwt-facu20200.koyeb.app/auth/';
 
   constructor(private httpClient: HttpClient) { }
 

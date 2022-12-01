@@ -10,7 +10,7 @@ const cabecera = {headers: new HttpHeaders({'Content-Type': 'application/json'})
 })
 export class ProductoService {
 
-  productoURL = 'https://angularjwt.angularjwt.koyeb/productos/'
+  productoURL = 'https://angularjwt-facu20200.koyeb.app/productos/'
 
   constructor(private httpClient: HttpClient) { }
 

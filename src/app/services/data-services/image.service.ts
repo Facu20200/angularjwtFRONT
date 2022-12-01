@@ -9,7 +9,7 @@ const cabecera = {headers: new HttpHeaders({'Content-Type': 'application/json'})
   providedIn: 'root'
 })
 export class ImageService {
-  baseUrl = 'https://angularjwt.angularjwt.koyeb/image';
+  baseUrl = 'https://angularjwt-facu20200.koyeb.app/image';
 
   constructor(private http: HttpClient) { }
 

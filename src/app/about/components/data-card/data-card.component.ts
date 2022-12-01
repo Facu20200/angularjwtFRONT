@@ -15,7 +15,7 @@ export class DataCardComponent implements OnInit {
   @Input() data = new DataForm();
   @Output() onDelete = new EventEmitter<number>();
   @Output() onEdit = new EventEmitter<DataForm>();
-  API_URL = 'https://angularjwt.angularjwt.koyeb/about/';
+  API_URL = 'https://angularjwt-facu20200.koyeb.app/about/';
   onLogin: boolean = false;
   editMode: boolean = false;
 

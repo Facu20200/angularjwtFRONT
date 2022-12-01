@@ -24,7 +24,7 @@ export class DataFormComponent implements OnInit {
   preview: string = '';
   form: FormGroup;
   imgName: string = '';
-  API_URL = 'https://angularjwt.angularjwt.koyeb/about/';
+  API_URL = 'https://angularjwt-facu20200.koyeb.app/about/';
 
   constructor(private fb: FormBuilder, private imgService: ImageService) {
     this.form = this.fb.group({

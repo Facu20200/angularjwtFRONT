@@ -10,7 +10,7 @@ const cabecera = {headers: new HttpHeaders({'Content-Type': 'application/json'})
   providedIn: 'root',
 })
 export class HardSkillService {
-  baseUrl = 'https://angularjwt.angularjwt.koyeb/hardskill';
+  baseUrl = 'https://angularjwt-facu20200.koyeb.app/hardskill';
 
   constructor(private http: HttpClient) {}
 
