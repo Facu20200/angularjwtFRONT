@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -19,7 +19,9 @@ import { UserComponent } from './users/user.component';
 import { AdminComponent } from './users/admin.component';
 import { RegistroComponent } from './users/registro.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { AboutModule } from './about/about.module';
+import { AboutComponent } from './about/about.component';
+import { AboutRoutingModule } from './about/about-routing.module';
 
 @NgModule({
   declarations: [
@@ -39,9 +41,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HttpClientModule,
     FormsModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AboutModule,
+    AboutComponent,
+    AboutRoutingModule
   ],
   providers: [interceptorProvider],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule { }

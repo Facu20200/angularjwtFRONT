@@ -7,7 +7,7 @@ import { AboutTitlesComponent } from 'src/app/about/components/about-titles/abou
 @Component({
   selector: 'app-education',
   templateUrl: './education.component.html',
-  styleUrls: ['./education.component.scss'],
+  styleUrls: ['./education.component.css'],
 })
 export class EducationComponent implements OnInit {
   educationData: DataForm[] = [];

@@ -6,7 +6,7 @@ import { environment } from 'src/environments/environment';
 @Component({
   selector: 'app-hard-skills',
   templateUrl: './hard-skills.component.html',
-  styleUrls: ['./hard-skills.component.scss'],
+  styleUrls: ['./hard-skills.component.css'],
 })
 export class HardSkillsComponent implements OnInit {
   frontend: HardSkill[] = [];

@@ -14,20 +14,20 @@ import { TokenService } from 'src/app/services/token.service';
     </div>
   `,
   styles: [`
-    @import "/src/styles";
-    @import "/src/styles/variables";
+    @import "./src/styles";
+    @import "./src/styles/variables";
 
     .icon {
       transition: all 0.5s ease;
       &:hover {
         color: $color-primary;
         transform: scale(1.25);
-      }
+      };
       &:active {
         color: $color-light;
         transform: scale(0.75);
-      }
-    }
+      };
+    };
     `],
 })
 

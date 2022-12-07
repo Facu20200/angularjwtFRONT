@@ -9,7 +9,7 @@ import { TokenService } from 'src/app/services/token.service';
 @Component({
   selector: 'app-data-card',
   templateUrl: './data-card.component.html',
-  styleUrls: ['./data-card.component.scss'],
+  styleUrls: ['./data-card.component.css'],
 })
 export class DataCardComponent implements OnInit {
   @Input() data = new DataForm();

@@ -17,6 +17,7 @@ import { SkillFormComponent } from './components/soft-skills/skill-form/skill-fo
 import { SkillPanelComponent } from './components/soft-skills/skill-panel/skill-panel.component';
 import { SkillItemComponent } from './components/hard-skills/skill-item/skill-item.component';
 import { HskillFormComponent } from './components/hard-skills/hskill-form/hskill-form.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -41,6 +42,20 @@ import { HskillFormComponent } from './components/hard-skills/hskill-form/hskill
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    NgbModule,
+    AboutComponent,
+    ProfileComponent,
+    HardSkillsComponent,
+    SoftSkillsComponent,
+    AboutTitlesComponent,
+    ExperienceComponent,
+    EducationComponent,
+    DataCardComponent,
+    DataFormComponent,
+    SkillFormComponent,
+    SkillPanelComponent,
+    SkillItemComponent,
+    HskillFormComponent
   ],
   exports: [
     AboutComponent,
@@ -55,7 +70,7 @@ import { HskillFormComponent } from './components/hard-skills/hskill-form/hskill
     SkillFormComponent,
     SkillPanelComponent,
     SkillItemComponent,
-    HskillFormComponent,
+    HskillFormComponent
   ],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

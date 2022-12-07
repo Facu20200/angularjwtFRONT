@@ -6,7 +6,7 @@ import { ExperienceService } from 'src/app/services/data-services/experience.ser
 @Component({
   selector: 'app-experience',
   templateUrl: './experience.component.html',
-  styleUrls: ['./experience.component.scss'],
+  styleUrls: ['./experience.component.css'],
 })
 export class ExperienceComponent implements OnInit {
   workData!: DataForm[];
