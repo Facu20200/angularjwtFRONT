@@ -14,8 +14,8 @@ import { TokenService } from 'src/app/services/token.service';
     </div>
   `,
   styles: [`
-    @import "./src/styles";
-    @import "./src/styles/variables";
+    @import "../../../../styles";
+    /* @import "../styles/variables";
 
     .icon {
       transition: all 0.5s ease;
@@ -27,7 +27,7 @@ import { TokenService } from 'src/app/services/token.service';
         color: $color-light;
         transform: scale(0.75);
       };
-    };
+    }; */
     `],
 })
 

@@ -43,7 +43,6 @@ import { AboutRoutingModule } from './about/about-routing.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     AboutModule,
-    AboutComponent,
     AboutRoutingModule
   ],
   providers: [interceptorProvider],

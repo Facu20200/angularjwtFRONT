@@ -42,20 +42,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    NgbModule,
-    AboutComponent,
-    ProfileComponent,
-    HardSkillsComponent,
-    SoftSkillsComponent,
-    AboutTitlesComponent,
-    ExperienceComponent,
-    EducationComponent,
-    DataCardComponent,
-    DataFormComponent,
-    SkillFormComponent,
-    SkillPanelComponent,
-    SkillItemComponent,
-    HskillFormComponent
+    NgbModule
   ],
   exports: [
     AboutComponent,
