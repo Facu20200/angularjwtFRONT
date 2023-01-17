@@ -17,19 +17,41 @@
           <a class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" routerLink="login">Iniciar Sesión</a>
         </li>
         <li *ngIf="authority === 'user'" class="nav-item">
-          <a class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" routerLink="user">Panel de usuario</a>
+          <a class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" routerLink="user">Panel de Proyecto: Usuario</a>
       </li>
         <li *ngIf="authority === 'admin'" class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" routerLink="admin">Panel de Admin</a>
+            <a class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" routerLink="admin">Panel de Proyecto: Admin</a>
         </li>
         <li *ngIf="isLogin" class="nav-item">
-          <a class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" (click)="logOut()" style="cursor: pointer;">Cerrar Sesión</a>
+          <a class="nav-link me-auto" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" (click)="logOut()" style="cursor: pointer;">Cerrar Sesión</a>
         </li>
+        <li class="nav-item">
+          <div class="d-flex flex-wrap align-items-center justify-content-end justify-content-lg-end">
+            <app-social-box></app-social-box>
+          </div>
+        </li>
+        <br>
+        <!-- <li>
+          <app-header></app-header>
+        </li> -->
       </ul>
     </div>
+
+    <br>
+
+    <!-- <div>
+      <app-header></app-header>
+    </div> -->
+
   </div>
 </nav>
 
 <div class="container-fluid flex" style="width:80%;float:center;display:flex;align-items:center;justify-content:center;">
   <router-outlet></router-outlet>
+</div>
+
+<br>
+
+<div class="container-fluid">
+  <app-footer></app-footer>
 </div>

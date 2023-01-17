@@ -22,6 +22,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutModule } from './about/about.module';
 import { AboutComponent } from './about/about.component';
 import { AboutRoutingModule } from './about/about-routing.module';
+import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
+import { SocialBoxComponent } from './social-box/social-box.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,10 @@ import { AboutRoutingModule } from './about/about-routing.module';
     LoginComponent,
     UserComponent,
     AdminComponent,
-    RegistroComponent
+    RegistroComponent,
+    FooterComponent,
+    HeaderComponent,
+    SocialBoxComponent
   ],
   imports: [
     BrowserModule,

@@ -15,7 +15,7 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class ProfileService {
-  baseUrl = 'https://angularjwt-facu20200.koyeb.app/profile';
+  baseUrl = 'https://angularjwt-facu20200.koyeb.app/api/profile';
 
   constructor(private http: HttpClient) {
   }

@@ -1,0 +1,36 @@
+.socialbox {
+  z-index: 2;
+  right: 10px;
+}
+.socialbox-link {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  color: #e0cef1;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+.socialbox-link:hover {
+  transform: scale(1.5);
+}
+.socialbox-link .fa-facebook:hover {
+  color: #3b5998;
+}
+.socialbox-link .fa-twitter:hover {
+  color: #1da1f2;
+}
+.socialbox-link .fa-instagram:hover {
+  color: #e1306c;
+}
+.socialbox-link .fa-linkedin:hover {
+  color: #0077b5;
+}
+.socialbox-link .fa-github:hover {
+  color: #474242;
+}
+.socialbox-link .fa-brands {
+  font-size: 1.5rem;
+  width: 2rem;
+  min-width: 2rem;
+  text-align: center;
+}

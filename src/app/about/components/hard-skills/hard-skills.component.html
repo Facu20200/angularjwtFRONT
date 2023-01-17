@@ -3,12 +3,14 @@
   [title]="'Hard Skills'"
   (onAdd)="onAdd()"
 ></app-about-titles>
+
 <div class="d-flex justify-content-center mt-3">
   <app-hskill-form
     *ngIf="addSkill"
     (dataChange)="onSubmit($event)"
     (cancelEdit)="addSkill = !addSkill"
   ></app-hskill-form>
+
   <app-hskill-form
     *ngIf="editMode"
     (dataChange)="onEdit($event)"
@@ -16,6 +18,7 @@
     [data]="editData"
     [id]="editData.id"
   ></app-hskill-form>
+
 </div>
 <section class="container skill">
   <nav class="skill__nav">
@@ -34,6 +37,7 @@
           Frontend
         </button>
       </li>
+
       <li class="nav-item skill-nav-item" role="presentation">
         <button
           class="nav-link skill-nav-button"
@@ -48,6 +52,7 @@
           Backend
         </button>
       </li>
+
       <li class="nav-item skill-nav-item" role="presentation">
         <button
           class="nav-link skill-nav-button"
@@ -62,8 +67,10 @@
           Tools
         </button>
       </li>
+
     </ul>
   </nav>
+
   <div
     class="d-flex tab-content bg-gradient bg-opacity-25 rounded-3 skill__panel"
   >
@@ -77,12 +84,12 @@
       <h3 class="p-2 text-primary mb-auto fs-2 fw-bold skill__panel__title">
         Frontend
       </h3>
-      <p class="text-light pb-2 skill__panel__text">
+      <p class="text-dark pb-2 skill__panel__text">
         Tengo mucha afinidad con la programacion modular y orientada a
         componentes que ofrece Angular y todo su entorno. Trabajo tanto con
         Javascript nativo como con Typescript y para los estilos me gusta
-        convinar librerias como Bootstrap con el toque personal que le puede dar
-        sass.
+        combinar librerias como Bootstrap con el toque personal que le puede dar
+        css.
       </p>
       <div class="row d-inline-flex justify-content-center gap-1 py-3 mb-3">
         <app-skill-item
@@ -94,6 +101,7 @@
         ></app-skill-item>
       </div>
     </article>
+
     <article
       class="tab-pane skill__panel__article"
       id="back"
@@ -102,7 +110,7 @@
       tabindex="0"
     >
       <h3 class="p-2 text-primary fs-2 fw-bold skill__panel__title">Backend</h3>
-      <p class="text-light pb-2 skill__panel__text">
+      <p class="text-dark pb-2 skill__panel__text">
         Eh desarrollado algunas Rest API utilizando Spring Boot conectando una
         base de datos de MySQL y algunos proyectos pequeños en Node Js
       </p>
@@ -116,6 +124,7 @@
         ></app-skill-item>
       </div>
     </article>
+
     <article
       class="tab-pane skill__panel__article"
       id="tools"
@@ -124,7 +133,7 @@
       tabindex="0"
     >
       <h3 class="p-2 text-primary fs-2 fw-bold skill__panel__title">Tools</h3>
-      <p class="text-light pb-2 skill__panel__-text">
+      <p class="text-dark pb-2 skill__panel__-text">
         Llevo mi dia a dia con varias herramientas para organizar y agilizar mi
         trabajo asi poder optimizar mi tiempo
       </p>
@@ -138,5 +147,6 @@
         ></app-skill-item>
       </div>
     </article>
+
   </div>
 </section>

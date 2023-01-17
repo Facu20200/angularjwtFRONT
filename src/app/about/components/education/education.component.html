@@ -1,23 +1,26 @@
 <app-about-titles
   class="row"
   [title]="'Educación y Certificaciones'"
-  (onAdd)="onAdd()"
-></app-about-titles>
+  (onAdd)="onAdd()">
+</app-about-titles>
+
 <app-data-form
   *ngIf="addEducation"
   [formLabels]="['institucion', 'titulo']"
   (dataChange)="onSubmit($event)"
-  (cancelEdit)="addEducation = !addEducation"
-></app-data-form>
+  (cancelEdit)="addEducation = !addEducation">
+</app-data-form>
+
 <div class="container">
   <div
     class="row d-flex justify-content-center gap-3"
-    *ngFor="let data of educationData"
-  >
+    *ngFor="let data of educationData">
+
     <app-data-card
       [data]="data"
       (onEdit)="onEdit($event)"
-      (onDelete)="onDelete($event)"
-    ></app-data-card>
+      (onDelete)="onDelete($event)">
+    </app-data-card>
+
   </div>
 </div>
